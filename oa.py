@@ -17,7 +17,7 @@ for i in range(13000,13800):
 	print "Name : "+html[beg:end].strip()
 	# Find the hostel info for the current roll number
 	beg=html.find('<b>Hostel Info: </b>')+len("<b>Hostel Info: </b>")
-	if(beg==len("<b>Name: </b>")-1):
+	if(beg==len("<b>Hostel Info: </b>")-1):
 		print "Roll No %d invalid" %i
 		continue
 	end=html.find('<br>',beg)
